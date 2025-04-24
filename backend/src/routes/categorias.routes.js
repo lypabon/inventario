@@ -4,7 +4,13 @@ import { methodHTTP as categoriaController } from "../controllers/categoria.cont
 const router = Router();
 
 /* configuramos repsuesta desde server metodo http get */
-router.get("/", categoriaController.getCategorias )
+router.get("/", categoriaController.getCategorias );
+router.post("/", categoriaController.postCategorias );
+
+router.get("/:id", categoriaController.getCategory );
+
+router.delete("/:id", categoriaController.deleteCategory );
+
 
 /* hacemos disponible a router en toda la app */
 export default router;
