@@ -11,6 +11,8 @@ router.get("/:id", categoriaController.getCategory );
 
 router.delete("/:id", categoriaController.deleteCategory );
 
+router.put("/:id", categoriaController.updateCategorias );
+
 
 /* hacemos disponible a router en toda la app */
 export default router;
