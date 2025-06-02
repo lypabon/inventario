@@ -9,6 +9,10 @@ dotenv.config();
 
 app.use("/categorias", categoriaRouter);
 
+app.get("/", (req, res) => {
+  res.send("REST API EN RENDER WITHOUT DATABASE ENPOINT");
+});
+
 const PORT = process.env.PORT;
 
 conectarDB(); 
